@@ -16,6 +16,7 @@ img{
     width: 100%;
     height: 100%;
 }
+
 /*header*/
 .header{
     width: 100%;
@@ -62,13 +63,13 @@ img{
     float: right;
 }
 /*headerFont*/
+h1{
+    line-height: 56px;
+}
 .logoText{
     line-height: 56px;
     color: #ffffff;
     font-size: 16px;
-}
-.headerBox h1{
-    line-height: 56px;
 }
 
 /*main*/
@@ -77,34 +78,6 @@ img{
     margin: auto;
     overflow: hidden;
 }
-.mainLeft {
-    width: 75%;
-    float: left;
-    overflow: hidden;
-}
-.blogDiary{
-    margin-top: 20px;
-    background: #fff;
-    border-radius: 3px;
-    padding: 20px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-.blogDiary img{
-    height: 100px;
-    width: 131px;
-    float: left;
-    margin-right: 20px;
-}
-.blogDiary h1 {
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-.blogDiary p {
-    color: #666;
-    font-size: 15px;
-}
-
 .slide{
     width: 244px;
     background: white;
@@ -133,119 +106,68 @@ img{
     background: #333333;
     transition: all .5s ease-in;
 }
-
-.new {
-    margin-top: 20px;
+/*mainLeft*/
+.mainLeft {
+    width: 75%;
+    float: left;
+    overflow: hidden;
+}
+.leftBox {
     background: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     overflow: hidden;
 }
-.hTitle {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.topTitle{
+    font-size: 22px;
+    margin-top: 10px;
 }
-.newUl {
-    padding: 10px 0 0;
-}
-
-.newUl li{
-    height: 207px;
-    position: relative;
-}
-.blogTitle {
-    margin: 0 0 10px 0;
-    font-size: 18px;
-    overflow: hidden;
-}
-.blogTitleB{
-    color: red;
-}
-.blogTitleA{
-    color: #333333;
-    font-size: 18px;
-}
-
-.blogSpan {
-    float: left;
-    width: 23.2%;
-    margin-right: 20px;
-    display: block;
-    overflow: hidden;
-    border-radius: 3px;
-    position: relative;
-}
-.blogSpan a {
-    text-decoration: none;
-    color: #333;
-}
-.blogSpan i {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    font-style: normal;
-    padding: 3px 5px;
-    background: rgba(18,182,221,.8);
-    font-size: 14px;
-}
-.blogSpan i a {
-    color: #FFF;
-}
-.blogSpan a {
-    text-decoration: none;
-    color: #333;
-}
-.blogSpan img {
-    width: 100%;
-    -moz-transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-    transition: all 0.5s;
-}
-.pText {
-    font-size: 14px;
-    color: #666;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
+.topInfo {
     margin-top: 20px;
-}
-.pInfo{
-    margin-top: 20px;
+    overflow: hidden;
     color: #999;
     line-height: 34px;
 }
-.pInfo span {
-    margin: 0 5px;
+.topI {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding: 2px;
+    display: block;
+    background: -webkit-linear-gradient(bottom left, rgba(0,153,255,.9), rgba(42,228,197,.7));
+    background: -o-linear-gradient(bottom left, rgba(0,153,255,.9), rgba(42,228,197,.7));
+    background: linear-gradient(to top right, rgba(0,153,255,.9), rgba(42,228,197,.7));
 }
-.pInfo img {
+.topI img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
-.pInfoS{
-    color: #009966;
-}
-.readMore {
-    right: 10px;
-    bottom: 20px;
+.topI::after {
+    content: "";
     position: absolute;
-    padding: 3px 10px;
-    background: #12b7de;
-    color: #fff;
-    border-radius: 3px;
+    background: url(../image/v.png) no-repeat;
+    background-size: 12px;
+    width: 12px;
+    height: 12px;
+    right: 0;
+    bottom: 0;
+}
+.bottomInfo b {
+    margin-right: 10px;
+    color: #000;
+}
+.bottomInfo {
+    color: #888888;
+    border: 1px solid #F3F3F3;
+    padding: 10px;
+    margin: 10px auto 0;
+    line-height: 23px;
+    background: none repeat 0 0 #F6F6F6;
 }
 
 /*mainRight*/
@@ -614,6 +536,51 @@ img{
     margin-bottom: 5px;
 }
 .top {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../image/top.png) no-repeat center #000;
+    right: 20px;
+    bottom: 10%;
+    position: fixed;
+}
+
+.footer {
+    background: #373D41;
+    width: 100%;
+    border-top: #00C1DE 10px solid;
+    padding: 30px 0;
+    color: #73777a;
+    font-size: 14px;
+}
+.box{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.wx{
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.wx li{
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+}
+.wx img{
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+.text b {
+    font-size: 16px;
+    color: #00c1de;
+}
+.text p {
+    margin-bottom: 5px;
+}
+.top2 {
     width: 40px;
     height: 40px;
     display: block;
