@@ -71,6 +71,12 @@ h1{
     color: #ffffff;
     font-size: 16px;
 }
+.iconfont.icon-fangdajing {
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 60px;
+    float: right;
+}
 
 /*main*/
 .main{

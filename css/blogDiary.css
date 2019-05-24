@@ -61,6 +61,12 @@ img{
     margin: 0 auto;
     float: right;
 }
+.iconfont.icon-fangdajing {
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 60px;
+    float: right;
+}
 /*headerFont*/
 .logoText{
     line-height: 56px;
