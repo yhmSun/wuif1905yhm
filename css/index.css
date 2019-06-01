@@ -78,6 +78,7 @@ h1{
 }
 
 
+
 /*banner*/
 .banner{
     width: 1200px;
@@ -92,16 +93,20 @@ h1{
     background: lightblue;
     float: left;
     margin: 0 auto;
+    overflow: hidden;
 }
 .bannerImg li{
     position: absolute;
-    left: 0;
+    left: 620px;
     top: 0;
 }
 .bannerImg > li > a{
     width: 620px;
     height: 260px;
     display: block;
+}
+.bannerImg > li:first-child{
+    left:0;
 }
 .leftBtn, .rightBtn{
     width: 40px;
@@ -110,6 +115,7 @@ h1{
     top: 50%;
     margin-top: -16px;
     cursor: pointer;
+    z-index: 999;
 }
 .leftBtn{
     left: 50px;
@@ -126,6 +132,7 @@ h1{
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    z-index: 9999;
 }
 .btnList li {
     border-radius: 50%;
@@ -134,7 +141,12 @@ h1{
     background: #FFFFFF;
     float: left;
     margin-right: 14px;
+    transition: 0.5s;
 }
+.btnList > li.lag{
+    background: #009966;
+}
+
 .bannerMid{
     width: 268px;
     height: 100%;
@@ -269,10 +281,11 @@ a.iconfont.icon-weixin {
 .diaryList{
     border-bottom: 1px solid #e4e3e3;
     overflow: hidden;
-    padding: 10px 0;
+    padding: 0px 0;
     position: relative;
 }
-.diaryList::before{
+
+.diaryList > li.news > a::before{
     content: " ";
     width: 95px;
     height: 3px;
@@ -281,9 +294,21 @@ a.iconfont.icon-weixin {
     bottom: -1px;
     background: #333333;
 }
-.diaryList li{
+
+.diaryList a{
     float: left;
     margin-right: 25px;
+    color: #333333;
+    display: block;
+}
+.diaryList .hot{
+    float: left;
+    margin-right: 25px;
+    color: #333333;
+    display: block;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #333333;
 }
 .diaryTab{
     width: 100%;
@@ -355,11 +380,10 @@ a.iconfont.icon-weixin {
     height: 100%;
     float: right;
 }
-.diaryTab ul li:first-child i {
+.tabList ul li :first-child i {
     background: #222;
 }
 .tabList li:nth-child(1) {
-    height: 36%;
     background: #f7f7f7;
 }
 .tabList li {
