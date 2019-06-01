@@ -1,7 +1,7 @@
 window.onload = function () {
     let home = document.getElementById('home')
     home.onmouseenter = function () {
-        home.style.color = 'red';
+        home.style.color = '#FF991A';
     };
     home.onmouseleave = function () {
         home.style.color = '#ffffff';
