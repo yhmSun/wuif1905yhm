@@ -281,17 +281,16 @@ a.iconfont.icon-weixin {
 .diaryList{
     border-bottom: 1px solid #e4e3e3;
     overflow: hidden;
-    padding: 0px 0;
-    position: relative;
+    padding: 10px 0;
 }
 
-.diaryList > li.news > a::before{
+.diaryList > a.hot::before{
     content: " ";
     width: 95px;
     height: 3px;
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -11px;
     background: #333333;
 }
 
@@ -300,16 +299,9 @@ a.iconfont.icon-weixin {
     margin-right: 25px;
     color: #333333;
     display: block;
+    position: relative;
 }
-.diaryList .hot{
-    float: left;
-    margin-right: 25px;
-    color: #333333;
-    display: block;
-    box-sizing: border-box;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #333333;
-}
+
 .diaryTab{
     width: 100%;
     height: 210px;
@@ -704,6 +696,9 @@ a.iconfont.icon-weixin {
     height: 207px;
     position: relative;
 }
+
+
+
 .blogTitle {
     margin: 0 0 10px 0;
     font-size: 18px;
